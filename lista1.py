@@ -164,14 +164,3 @@ print('joao vitor')
 # dolar = float(input('digite o valor em dólar: US$ '))
 # real = dolar * 4.98
 # print(f'valor convertido para real é : R$ {real:.2f}')
-
-
-
-
-
-
-
-
-
-
-
