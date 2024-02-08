@@ -102,10 +102,11 @@ print('joao vitor')
 #15. Faça um programa que leia o valor de um produto, o percentual
 #    do desconto desejado e imprima o valor do desconto e o valor
 #    do produto subtraindo o desconto.
-#prodt = float(input('digite o valor do produto: '))
-#desct = float(input('adicione a % de desconto : '))
-#novovalor = prodt - (prodt * (desct / 100))
-#print(f'valor do produto : {prodt} \n valor com o desconto : {novovalor}')
+# prodt = float(input('digite o valor do produto: '))
+# desct = float(input('adicione a % de desconto : '))
+# novovalor = prodt - (prodt * (desct / 100))
+# desconto = prodt * (desct / 100)
+# print(f'valor do desconto : {desconto} \n valor com o desconto : {novovalor}')
 #16. Faça um programa que calcule o reajuste do salário de um
 #    funcionário. Para isso, o programa deverá ler o salário atual
 #    do funcionário e ler o percentual de reajuste. Ao final imprimir
