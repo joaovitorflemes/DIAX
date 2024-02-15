@@ -140,7 +140,7 @@ print('joao vitor')
 #    quantidade de litros consumidos na viagem.
 #tempo = float(input('digite tempo de hr gasto : '))
 #velocidade = float(input('digite a velocidae: '))
-#D = tempo * velocidade       
+#D = tempo / 60 * velocidade       
 #L = D / 12
 
 #print(f'distancia percorrida : {D} \n litros consumidos : {L}')
