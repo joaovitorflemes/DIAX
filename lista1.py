@@ -155,7 +155,7 @@ print('joao vitor')
 # taxa = float(input('digite o valor da taxa: '))
 # periodo = float(input('digite o periodo de atraso: '))
 
-# juros = (valorprest * taxa * periodo)
+# juros = (valorprest * taxa / 100 * periodo)
 # print(f'valor da prestaçao: {valorprest} \n periodo de atraso: {periodo} \n valor da taxa: {taxa} \n valor da prestaçao com acrescimo: {juros}')
 
 
