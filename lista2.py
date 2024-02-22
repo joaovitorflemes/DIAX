@@ -212,6 +212,7 @@
 #Acima de 45 até 59 anos R$150,00
 #Acima de 59 até 65 anos R$250,00
 #Maior que 65 anos R$400,00
+
 # idade = int(input('digite sua idade :'))
 # if idade < 10:
 #     print('Até 10 anos R$30,00')
@@ -229,8 +230,34 @@
 #18. Faça um programa que leia um número inteiro entre 1 e 12 e escreva o mês
 #correspondente. Caso o usuário digite um número fora desse intervalo, deverá
 #aparecer uma mensagem informando que não existe mês com este número.
-
-
+# mes = int(input('digite um numero de 1 a 12: '))
+# if mes == 1:
+#     print('mes de janeiro!!')
+# if mes == 2:
+#     print('mes de fevereiro!!')
+# if mes == 3:
+#     print('mes de março!!')
+# if mes == 4:
+#     print('mes de abril!!')
+# if mes == 5:
+#     print('mes de maio!!')
+# if mes == 6:
+#     print('mes de junho!!')
+# if mes == 7:
+#     print('mes de julho!!')
+# if mes == 8:
+#     print('mes de agosto!!')
+# if mes == 9:
+#     print('mes de setembro!!')
+# if mes == 10:
+#     print('mes de outubro!!')
+# if mes == 11:
+#     print('mes de novembro!!')
+# if mes == 12:
+#     print('mes de dezembro!!')
+# elif mes > 12:
+#     print('não existe mês com este número!!')
+    
 #19. Em um campeonato nacional de arco-e-flecha, tem-se equipes de três jogadores
 #para cada estado. Sabendo-se que os arqueiros de uma equipe não obtiveram o
 #mesmo número de pontos, criar um programa que informe se uma equipe foi
@@ -239,6 +266,27 @@
 #• Mostrar esses valores em ordem decrescente;
 #• Se a soma dos pontos for maior do que 100, imprimir a média aritmética entre eles,
 #  caso contrário, imprimir a mensagem "Equipe desclassificada".
+# jogador1 = float(input('digite os pontos obtidos: '))
+# jogador2 = float(input('digite os pontos obtidos: '))
+# jogador3 = float(input('digite os pontos obtidos: '))
+# soma = jogador1 + jogador2 + jogador3
+# media = (jogador1 + jogador2 + jogador3) / 3
+# if jogador1 > jogador2 > jogador3:
+#     print(f'{jogador1} - {jogador2} - {jogador3}')
+# if jogador2 > jogador1 > jogador3:
+#     print(f'{jogador2} - {jogador1} - {jogador3}')
+# if jogador3 > jogador2 > jogador1:
+#     print(f'{jogador3} - {jogador2}')
+# if jogador2 > jogador3 > jogador1:
+#     print(f'{jogador2} - {jogador3} - {jogador1}')
+# if jogador3 > jogador1 > jogador2:
+#     print(f'{jogador3} - {jogador1} - {jogador2}')
+# if jogador1 > jogador3 > jogador2:
+#     print(f'{jogador1} - {jogador3} - {jogador2}')
+# if soma > 100:
+#     print(f'{media}')
+# elif soma < 100 :
+#     print('Equipe desclassificada')
 
 #20. O banco XXX concederá um crédito especial com juros de 2% aos seus clientes de
 #acordo com o saldo médio no último ano. Faça um programa que leia o saldo médio
@@ -250,6 +298,19 @@
 #de 501 a 1000 30% do valor do saldo médio
 #de 1001 a 3000 40% do valor do saldo médio
 #acima de 3001 50% do valor do saldo médio
+# saldo_medio = float(input("Digite o saldo médio do cliente: "))
+# valor_credito = saldo_medio - saldo_medio * (2/100)
+# if saldo_medio <= 500:
+#     print('0 a 500 nenhum crédito!!')
+# elif valor_credito <= 1000:
+#     print(f'valor do credito : {valor_credito * (30/100)}')
+# elif valor_credito <= 3000:
+#     print(f'valor do credito : {valor_credito * (40/100)}')
+# else:
+#     print(f'valor do credito : {valor_credito * (50/100)}')
+
+# print(f'{saldo_medio}')
+
 
 #21. A biblioteca de uma Universidade deseja fazer um programa que leia o nome do
 #livro que será emprestado, o tipo de usuário (professor ou aluno) e possa
@@ -258,10 +319,18 @@
 #• Nome do livro:
 #• Tipo de usuário:
 #• Total de dias:
-
+# livro = input('nome do livro: ')
+# usuário = input('professor ou aluno: ')
+# dias = int(input('digite o total de dias: '))
+# print(f'recibo \n {livro} \n {usuário} \n {dias} ')
+# if dias > 4 and dias <= 10:
+#     print('somento profesores')
+# if dias <= 3:
+#     print('alunos')
 #22. Construa um programa que leia o percurso em quilômetros, o tipo do carro e
 #informe o consumo estimado de combustível, sabendo-se que um carro tipo A faz
 #12 km com um litro de gasolina, um tipo B faz 9 km e o tipo C 8 km por litro.
+
 
 #23. Crie um programa que informe a quantidade total de calorias de uma refeição
 #a partir da escolha do usuário que deverá informar o prato, a sobremesa, e
@@ -277,6 +346,9 @@
 #carro deve ser renovado é determinado pelo último número da placa do mesmo,
 #faça um programa que, a partir da leitura da placa do carro, informe o mês
 #em que o emplacamento deve ser renovado.
+# placa = input('placa veiculo:')
+# mes = placa[len(placa) -1]
+# print(f'{mes}')
 
 #25. A prefeitura contratou uma firma especializada para manter os níveis de
 #poluição considerados ideais para um país do 1º mundo. As indústrias,
