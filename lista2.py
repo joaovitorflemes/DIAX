@@ -332,6 +332,7 @@
 #12 km com um litro de gasolina, um tipo B faz 9 km e o tipo C 8 km por litro.
 
 
+
 #23. Crie um programa que informe a quantidade total de calorias de uma refeição
 #a partir da escolha do usuário que deverá informar o prato, a sobremesa, e
 #bebida conforme a tabela a seguir.
@@ -340,6 +341,25 @@
 #Peixe 230cal   Sorvete diet 110cal Suco de laranja 70cal
 #Frango 250cal  Mousse diet 170cal  Suco de melão 100cal
 #Carne 350cal   Mousse chocolate 200cal Refrigerante diet 65cal
+# prato = input('Prato: ').upper().strip()
+#     sobremesa = input('Sobremesa: ').upper().strip()
+#     bebida = input('Bebida: ').upper().strip()
+
+#     total = 0
+#     total += 180 if prato == 'VEGETARIANO' else 0
+#     total += 230 if prato == 'PEIXE' else 0
+#     total += 250 if prato == 'FRANGO' else 0
+#     total += 350 if prato == 'CARNE' else 0
+#     total += 75 if sobremesa == 'ABACAXI' else 0
+#     total += 110 if sobremesa == 'SOVERTE DIET' else 0
+#     total += 170 if sobremesa == 'MOUSSE DIET' else 0
+#     total += 200 if sobremesa == 'MOUSSE CHOCOLATE' else 0
+#     total += 20 if bebida == 'CHA' else 0
+#     total += 70 if bebida == 'SUCO DE LARANJA' else 0
+#     total += 100 if bebida == 'SUCO DE MELAO' else 0
+#     total += 65 if bebida == 'REFRIGERANTE' else 0            
+
+#     print(f'Total de calorias: {total}')
 
 #24. A polícia rodoviária resolveu fazer cumprir a lei e vistoriar veículos para
 #cobrar dos motoristas o DUT. Sabendo-se que o mês em que o emplacamento do
@@ -360,3 +380,9 @@
 #0,3 1º grupo
 #0,4 1º e 2º grupos
 #0,5 1º, 2º e 3º grupos
+
+opcao = int(input('Questão a ser executada: '))
+match opcao:
+    case 1: q01()
+    case 2: q02()
+    case _: print('Opção Inválida!')
