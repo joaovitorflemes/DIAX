@@ -34,11 +34,13 @@
 #5. Sabendo-se que a unidade lógica e aritmética calcula o produto através de somas
 #sucessivas, crie um programa que calcule o produto de dois números inteiros
 #lidos. Suponha que os números lidos sejam positivos.
+# soma = 0
 # n1 = int(input('digite o vl: '))
 # n2 = int(input('digite o vl: '))
-# for c in range(15):
-#     soma = n1 + n2
-#     print(f'{soma}')
+# for x in range(num1):
+#     soma += num2
+# print(f'{num1} * {num2} = {soma} ')
+
 
    
 
@@ -47,6 +49,14 @@
 #a partir da soma dos anteriores. Exemplo:
 #• 1 + 1 = 2, terceiro termo;
 #• 1 + 2 = 3, quarto termo, etc.
+# anterior = 0
+# atual = 1
+# print(atual, end = " ")
+# for x in range(19):
+#     proximo = anterior + atual
+#     print(proximo, end = " ")
+#     anterior = atual
+#     atual = proximo
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 
 
@@ -54,6 +64,14 @@
 #prova 1 e da prova 2 de 15 alunos. Ao final, imprimir uma listagem, contendo:
 #nome, nota da prova 1, nota da prova 2, e média das notas de cada aluno. Ao final,
 #imprimir a média geral da turma.
+# for x in range(15):
+#     nome = input('coloque o nome do aluno: ')
+#     nota1 = float(input('digite a nota da prova 1: '))
+#     nota2 = float(input('digite a nota da prova 2: '))
+#     media = (nota1 + nota2) / 2
+#     print(f'{nome}, {nota1}, {nota2} , {media}')
+# print(f' media geral: {media}')
+
 
 #8. Faça umprograma que permita entrar com o nome e o salário bruto de 10 pessoas.
 #Após ler os dados, imprimir o nome e o valor da alíquota do imposto de renda
@@ -62,6 +80,15 @@
 #Salário menor que R$1300,00 Isento
 #Salário maior ou igual a R$1300,00 e menor que R$2300,00 10% do salário bruto
 #Salário maior ou igual a R$2300,00 15% do salário bruto
+# for x in range(10):
+#     nome = input('digite seu nome: ')
+#     salariob = float(input('salario bruto: '))
+#     if salariob < 1300:
+#         print('Isento')
+#     if salariob >= 1300 and salariob < 2300:
+#         print(f'imposto de 10% : {salariob - (salariob * 2 / 100)} ')
+#     if salariob >= 2300:
+#         print(f'imposto de 15% : {salariob - (salariob * 2 / 100)} ')
 
 #9. No dia da estréia do filme "Procurando Dory", uma grande emissora de TV realizou
 #uma pesquisa logo após o encerramento do filme. Cada espectador respondeu
@@ -72,6 +99,24 @@
 #• A quantidade de pessoas que responderam regular;
 #• A percentagem de pessoas que responderam bom entre todos os expectadores
 #analisados.
+# qtdePessoasExcelente = 0
+# somaIdadeExcelente = 0
+# qtdePessoasRegular = 0
+# qtdePessoasBom = 0
+# qtdeTotalPessoas = int(input('Número de Pessoas: '))
+# for x in range(qtdeTotalPessoas):
+#     idade = int(input('Idade: '))
+#     opiniao = int(input('Opinião ([3]-Excelente - [2]-Bom - [1]-Regular): '))
+#     match(opiniao):
+#         case 1: qtdePessoasRegular += 1
+#         case 2: qtdePessoasBom += 1
+#         case 3:
+#             qtdePessoasExcelente +=1
+#             somaIdadeExcelente += idade
+#         case _: print('Opção Inválida!')
+# print(f'Média idade excelente: {somaIdadeExcelente/qtdePessoasExcelente}')
+# print(f'Qtde de pessoas regular: {qtdePessoasRegular}')
+# print(f'% de pessoas que responderam bom: {qtdePessoasBom/qtdeTotalPessoas*100}%')
 
 #10. Em um campeonato Europeu de Volleyball, se inscreveram 30 países. Sabendo-se
 #que na lista oficial de cada país consta, além de outros dados, peso e idade de 12
@@ -81,6 +126,17 @@
 #• O atleta mais pesado de cada time;
 #• O atleta mais jovem de cada time;
 #• O peso médio e a idade média de todos os participantes.
+maispesado = 0
+maisjovem = 0
+somaidade = 0
+somapeso = 0
+for x in range(12):
+    peso = input('peso do jogador: ')
+    idade = int(input('idade do jogador: '))
+    
+
+
+     
     
 #11. Construa um programa que leia vários números e informe quantos números
 #entre 100 e 200 foram digitados. Quando o valor 0 (zero) for lido, o algoritmo
