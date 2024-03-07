@@ -1,3 +1,5 @@
+import random
+
 # exemploPara():
 #     for x in range(10):
 #         print(x) # imprime de 0 a 9
@@ -126,14 +128,89 @@
 #• O atleta mais pesado de cada time;
 #• O atleta mais jovem de cada time;
 #• O peso médio e a idade média de todos os participantes.
-maispesado = 0
-maisjovem = 0
-somaidade = 0
-somapeso = 0
-for x in range(12):
-    peso = input('peso do jogador: ')
-    idade = int(input('idade do jogador: '))
+
+# import random
+
+# g_pesomedio = 0
+# g_idademedia = 0
+
+# for x in range(30):
+
+#     print(f'time {x + 1}') 
+#     maispesado = 0
+#     maisjovem = 500
+
+#     for x in range(12):
+
+#         somaidade = 0
+#         somapeso = 0
+
+#         pesomedio = 0
+#         idademedia = 0
+
+#         # peso = float(input('peso do jogador: '))
+#         # idade = int(input('idade do jogador: '))
+
+#         peso = random.randrange(120)
+#         idade = random.randrange(65)
+        
+#         print(f'jogador{x + 1}: {peso}kg - {idade} anos')
+
+#         pesomedio += peso
+#         idademedia += idade
+        
+#         if peso > maispesado:    
+
+#             maispesado = peso
+
+#         if idade < maisjovem:
+
+#             maisjovem = idade
+
+#     g_pesomedio = pesomedio
+#     g_idademedia = idademedia
+
+#     pesomedio = pesomedio / 12
+#     idademedia = idademedia / 12
+#     resultado = f"""
+
+#     pesomedio do time: {pesomedio:.2f}
+#     idademedia do time: {idademedia:.2f}
+#     maispesado do time: {maispesado:.2f}
+#     maisjovem do time: {maisjovem:.2f}
+#     """
+
+#     print(resultado)
+
+
+
+
+# g_pesomedio = g_pesomedio / 30
+# g_idademedia = g_idademedia / 30
+
+# resultado = f"""
+
+
+# pesomedio de todos os times: {g_pesomedio:.2f}
+# idademedia de todos os times: {g_idademedia:.2f}
+
+
+# """
+
+# print(resultado)
+
+
     
+    
+
+# print(f'\npesomedio time: {pesomedio:.2f}\nidademedia do time: {idademedia:.2f}')
+
+
+
+
+
+
+        
 
 
      
@@ -141,6 +218,19 @@ for x in range(12):
 #11. Construa um programa que leia vários números e informe quantos números
 #entre 100 e 200 foram digitados. Quando o valor 0 (zero) for lido, o algoritmo
 #deverá cessar sua execução.
+
+abobora = 0
+
+for x in range(200):
+
+    numero = random.randrange(1000)
+
+
+    if numero > 100 and numero < 200:
+        abobora += 1
+
+
+
 
 #12. Dado um país A, com 5 milhões de habitantes e uma taxa de natalidade de 3% ao
 #ano, e um país B com 7 milhões de habitantes e uma taxa de natalidade de 2% ao
