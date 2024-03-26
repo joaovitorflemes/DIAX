@@ -219,23 +219,29 @@ import random
 #entre 100 e 200 foram digitados. Quando o valor 0 (zero) for lido, o algoritmo
 #deverá cessar sua execução.
 
-abobora = 0
+# contador = 0
+# while True:
+#     numero = int(input("Digite um número (digite 0 para sair): "))
+#     if numero == 0:
+#         break
+#     if 100 <= numero <= 200:
+#         contador += 1
+# quantidade_numeros = contador
+# print(f"obteve {quantidade_numeros} numeros entre 100 e 200!")
 
-for x in range(200):
-
-    numero = random.randrange(1000)
 
 
-    if numero > 100 and numero < 200:
-        abobora += 1
-
-
-
+        
+    
 
 #12. Dado um país A, com 5 milhões de habitantes e uma taxa de natalidade de 3% ao
 #ano, e um país B com 7 milhões de habitantes e uma taxa de natalidade de 2% ao
 #ano, fazer um programa que calcule e imprima o tempo necessário para que a
 #população do país A ultrapasse a população do país B.
+
+
+
+
 
 #13. Uma empresa de fornecimento de energia elétrica faz a leitura mensal dos medidores
 #de consumo. Para cada consumidor, são digitados os seguintes dados:
