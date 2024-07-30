@@ -2,15 +2,44 @@
 #permita que o usuário digite um número inteiro para ser buscado na lista, se
 #for encontrado o programa deve imprimir a posição desse número na lista, caso
 #contrário, deve imprimir a mensagem: "Nao encontrado!".
+# armazenar = []
+# for x in range(15):
+#     armazenar.append(input('digite um numero:  '))
+# print(armazenar)
+
 
 #2. Faça um programa que armazene 10 letras em uma lista e imprima uma listagem
-#numerada.
+#numeradas
+# lista = []
+# i = 0
+# for x in range(10):
+#     list(input('digite 10 letras: '))
+#     print(f'{i}: {lista[i]}')
+#     i+=1
+
+
+
+
 
 #3. Construa uma programa que armazene 15 números em uma lista e imprima
 #uma listagem numerada contendo o número e uma das mensagens: par ou ímpar.
+lista = []
+
+if % 2 == 0:
+    print('par')
+else:
+    print('impar')
+
+for x in range(15):
+    lista.append(input("digite um numero:  "))
+    
+posicao = lista.index()
+print(posicao)
 
 #4. Faça um programa que armazene 8 números em uma lista e imprima todos os
 #números. Ao final, imprima o total de números múltiplos de seis.
+
+
 
 #5. Faça um programa que armazene as notas das provas 1 e 2 de 15 alunos. Calcule
 #e armazene a média arredondada. Armazene também a situação do aluno: 1-
