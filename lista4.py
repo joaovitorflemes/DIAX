@@ -23,21 +23,28 @@
 
 #3. Construa uma programa que armazene 15 números em uma lista e imprima
 #uma listagem numerada contendo o número e uma das mensagens: par ou ímpar.
-lista = []
+# lista = []
+# i = 0
+# for x in range(15):
+#     lista.append(int(input("digite um numero:  ")))
+#     if lista[i] % 2 == 0:
+#         print(f'{lista[i]} é par')
+#     else:
+#         print(f'{lista[i]} é impar')
+#     i+=1
 
-if % 2 == 0:
-    print('par')
-else:
-    print('impar')
 
-for x in range(15):
-    lista.append(input("digite um numero:  "))
-    
-posicao = lista.index()
-print(posicao)
 
 #4. Faça um programa que armazene 8 números em uma lista e imprima todos os
 #números. Ao final, imprima o total de números múltiplos de seis.
+lista = []
+for x in range(2):
+    lista.append(int(input('digite um numero: ')))
+    
+    
+
+
+
 
 
 
