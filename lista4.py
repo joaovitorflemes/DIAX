@@ -1,3 +1,5 @@
+import random
+
 #1. Faça um programa que armazene 15 números inteiros em uma lista e depois
 #permita que o usuário digite um número inteiro para ser buscado na lista, se
 #for encontrado o programa deve imprimir a posição desse número na lista, caso
@@ -37,9 +39,9 @@
 
 #4. Faça um programa que armazene 8 números em uma lista e imprima todos os
 #números. Ao final, imprima o total de números múltiplos de seis.
-lista = []
-for x in range(2):
-    lista.append(int(input('digite um numero: ')))
+# lista = []
+# for x in range(2):
+#     lista.append(int(input('digite um numero: ')))
     
     
 
@@ -53,11 +55,33 @@ for x in range(2):
 #Aprovado ou 2-Reprovado. Ao final o programa deve imprimir uma listagem
 #contendo as notas, a média e a situação de cada aluno em formato tabulado.
 #Utilize quantas listas forem necessárias para armazenar os dados.
+# alunos = []
+# for x in range(15):
+#     aluno = dict()
+#     aluno['nome'] = input('nome: ')
+#     aluno['nota1'] = float(input('nota 1: '))
+#     aluno['nota2'] = float(input('nota 2: '))
+#     aluno['media'] = (aluno['nota1'] + aluno['nota2']) / 2
+#     aluno['situacao'] = 'APROVADO' if aluno['media']>=6 else 'REPROVADO'
+#     alunos.append(aluno)
+# print('NOME\tNOTA1\tNOTA2\tMEDIA\tSITUACAO')
+# for a in alunos:
+#     print(f'{a["nome"]}\t{a["nota1"]}\t{a["nota2"]}\t{a["media"]}\t{a["situacao"]}') 
 
 #6. Construa um programa que permita armazenar o salário de 20 pessoas. Calcular
 #e armazenar o novo salário sabendo-se que o reajuste foi de 8%. Imprimir uma
 #listagem numerada com o salário e o novo salário. Declare quantas listas forem
 #necessárias.
+# pessoas = []
+# for x in range(20):
+#     b = dict()
+#     b['salario'] = float(input('salario: '))
+#     b['reajuste'] = (b['salario'] * 0.05) + (b['salario'])
+#     pessoas.append(b)
+# print('SALARIO\tREAJUSTE')
+# for a in pessoas:
+#     print(f'{a["salario"]}\t{a["reajuste"]}')
+    
 
 #7. Crie um programa que leia o preço de compra e o preço de venda de 100 mercadorias
 #(utilize listas). Ao final, o programa deverá imprimir quantas mercadorias
@@ -65,10 +89,29 @@ for x in range(2):
 #• lucro < 10%
 #• 10% <= lucro <= 20%
 #• lucro > 20%
+# precos_compra = []
+# precos_venda = []
+# for i in range(4):
+#     while True:
+#         try:
+#             compra = float(input(f"Digite o preço de compra da mercadoria {i+1}: "))
+#             venda = float(input(f"Digite o preço de venda da mercadoria {i+1}: "))
+#             precos_compra.append(compra)
+#             precos_venda.append(venda)
+#             break
+#         except ValueError:
+#             print("Por favor, digite um valor numérico válido.")
+# mercadorias_lucro = 0
+# for i in range(4):
+#     if precos_venda[i] > precos_compra[i]:
+#         mercadorias_lucro += 1
+# print(f"Quantidade de mercadorias que proporcionam lucro: {mercadorias_lucro}")
+
 
 #8. Construa um programa que armazene o código, a quantidade, o valor de compra
 #e o valor de venda de 30 produtos. A listagem pode ser de todos os produtos ou
 #somente de um ao se digitar o código. Utilize dicionário como estrutura de dados.
+
         
 #9. Faça um programa que leia dois conjuntos de números inteiros, tendo
 #cada um 10 elementos. Ao final o programa deve listar os elementos comuns aos
