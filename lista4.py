@@ -40,8 +40,13 @@ import random
 #4. Faça um programa que armazene 8 números em uma lista e imprima todos os
 #números. Ao final, imprima o total de números múltiplos de seis.
 # lista = []
+# i = 0
 # for x in range(2):
-#     lista.append(int(input('digite um numero: ')))
+#     lista.append(int(input('digite um numero: '))
+#     if lista[i] % 6 == 0:
+#         print(f'{lista[i]} é multiplo')
+#     i+=1
+    
     
     
 
@@ -76,7 +81,7 @@ import random
 # for x in range(20):
 #     b = dict()
 #     b['salario'] = float(input('salario: '))
-#     b['reajuste'] = (b['salario'] * 0.05) + (b['salario'])
+#     b['reajuste'] = (b['salario'] * 1.8) + (b['salario'])
 #     pessoas.append(b)
 # print('SALARIO\tREAJUSTE')
 # for a in pessoas:
@@ -112,15 +117,70 @@ import random
 #e o valor de venda de 30 produtos. A listagem pode ser de todos os produtos ou
 #somente de um ao se digitar o código. Utilize dicionário como estrutura de dados.
 
+# codigo = []
+# for x in range(2):
+#     codigos = dict()
+#     codigos['codigo'] = int(input("digite o codigo do produto: "))
+#     codigos['quant'] = int(input("digite a quantidade :  "))
+#     codigos['vlcompra'] = float(input("digite o valor da compra : "))
+#     codigos['vlvenda'] = float(input("digite o valor da venda: "))
+#     codigo.append(codigos)
+# print('CODIGO\tQUANTIDADE\tVALOR_COMPRA\tVALOR_VENDA')
+# for a in codigo:
+#     print(f'{a["codigo"]}\t    {a["quant"]}\t          {a["vlcompra"]}\t        {a["vlvenda"]}')
+
+
         
 #9. Faça um programa que leia dois conjuntos de números inteiros, tendo
 #cada um 10 elementos. Ao final o programa deve listar os elementos comuns aos
 #conjuntos.
+# def ler_conjunto(nome_conjunto):
+#     print(f"Digite 10 números inteiros para o {nome_conjunto}:")
+#     conjunto = set()
+#     while len(conjunto) < 10:
+#         try:
+#             numeros = input(f"Digite o número {len(conjunto)+1}: ").strip()
+#             conjunto.add(int(numeros))
+#         except ValueError:
+#             print("Por favor, digite um número inteiro válido.")
+#     return conjunto
+
+# def main():
+#     print("Conjunto 1:")
+#     conjunto1 = ler_conjunto("Conjunto 1")
+
+#     print("\nConjunto 2:")
+#     conjunto2 = ler_conjunto("Conjunto 2")
+
+#     comuns = conjunto1.intersection(conjunto2)
+
+#     print("\nElementos comuns aos dois conjuntos:")
+#     if comuns:
+#         for numero in comuns:
+#             print(numero)
+#     else:
+#         print("Não há elementos comuns.")
+
+# if __name__ == "__main__":
+#     main()
+
 
 #10. Faça um programa que leia uma lista com 10 elementos e obtenha outra lista resultado
 #cujos valores são os fatoriais da lista original.
 #Imprimir o maior e o menor, sem ordenar, o percentual de números pares e a
 #média dos elementos da lista.
+
+
+
+
+
+
+
+
+
+
+
+
 
 #11. Imprimir o maior e o menor, sem ordenar, o percentual de números pares e a
 #média dos elementos da lista.
