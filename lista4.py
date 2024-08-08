@@ -96,7 +96,7 @@ import random
 #• lucro > 20%
 # precos_compra = []
 # precos_venda = []
-# for i in range(4):
+# for i in range(100):
 #     while True:
 #         try:
 #             compra = float(input(f"Digite o preço de compra da mercadoria {i+1}: "))
@@ -118,16 +118,16 @@ import random
 #somente de um ao se digitar o código. Utilize dicionário como estrutura de dados.
 
 # codigo = []
-# for x in range(2):
+# for x in range(30):
 #     codigos = dict()
 #     codigos['codigo'] = int(input("digite o codigo do produto: "))
 #     codigos['quant'] = int(input("digite a quantidade :  "))
 #     codigos['vlcompra'] = float(input("digite o valor da compra : "))
 #     codigos['vlvenda'] = float(input("digite o valor da venda: "))
 #     codigo.append(codigos)
-# print('CODIGO\tQUANTIDADE\tVALOR_COMPRA\tVALOR_VENDA')
+# print('CODIGO')
 # for a in codigo:
-#     print(f'{a["codigo"]}\t    {a["quant"]}\t          {a["vlcompra"]}\t        {a["vlvenda"]}')
+#     print(f'{a["codigo"]}')
 
 
         
