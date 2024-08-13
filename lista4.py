@@ -170,10 +170,34 @@ import random
 #Imprimir o maior e o menor, sem ordenar, o percentual de números pares e a
 #média dos elementos da lista.
 
+# import math
 
+# def main():
+ 
+#     lista_original = [int(input(f"Digite o {i+1}º número: ")) for i in range(10)]
+    
 
+#     lista_fatoriais = [math.factorial(num) for num in lista_original]
 
+    
+#     maior = max(lista_fatoriais)
+#     menor = min(lista_fatoriais)
 
+#     total_pares = sum(1 for num in lista_fatoriais if num % 2 == 0)
+#     percentual_pares = (total_pares / len(lista_fatoriais)) * 100
+
+    
+#     media_fatoriais = sum(lista_fatoriais) / len(lista_fatoriais)
+
+#     print("\nLista original:", lista_original)
+#     print("Lista de fatoriais:", lista_fatoriais)
+#     print("Maior valor dos fatoriais:", maior)
+#     print("Menor valor dos fatoriais:", menor)
+#     print(f"Percentual de números pares na lista de fatoriais: {percentual_pares:.2f}%")
+#     print(f"Média dos elementos da lista de fatoriais: {media_fatoriais:.2f}")
+
+# if __name__ == "__main__":
+#     main()
 
 
 
@@ -185,6 +209,20 @@ import random
 #11. Imprimir o maior e o menor, sem ordenar, o percentual de números pares e a
 #média dos elementos da lista.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #12. Crie um programa para gerenciar um sistema de reservas de mesas em uma casa
 #de espetáculo. A casa possui 30 mesas de 5 lugares cada. O programa deverá
 #permitir que o usuário escolha o código de uma mesa (1 a 30) e forneça a
@@ -193,6 +231,61 @@ import random
 #emitir uma mensagem. O programa deve terminar quando o usuário digitar
 #o código 0 (zero) para uma mesa ou quando todos os 150 lugares estiverem
 #ocupados.
+
+# NUM_MESESAS = 30
+# LUGARES_POR_MESA = 5
+# TOTAL_LUGARES = NUM_MESESAS * LUGARES_POR_MESA
+# mesas = {i: LUGARES_POR_MESA for i in range(1, NUM_MESESAS + 1)}
+# lugares_ocupados = 0
+
+# def exibir_estado_mesas():
+#     """Exibe o estado atual das mesas."""
+#     print("\nEstado atual das mesas:")
+#     for mesa, lugares_disponiveis in mesas.items():
+#         print(f"Mesa {mesa}: {lugares_disponiveis} lugares disponíveis")
+
+# def reservar_lugares(codigo_mesa, quantidade_lugares):
+#     """Tenta reservar lugares na mesa especificada."""
+#     global lugares_ocupados
+
+#     if codigo_mesa not in mesas:
+#         print("Código da mesa inválido.")
+#         return
+
+#     if quantidade_lugares <= 0 or quantidade_lugares > LUGARES_POR_MESA:
+#         print("Quantidade de lugares inválida. Deve ser entre 1 e 5.")
+#         return
+
+#     if mesas[codigo_mesa] >= quantidade_lugares:
+#         mesas[codigo_mesa] -= quantidade_lugares
+#         lugares_ocupados += quantidade_lugares
+#         print(f"Reserva de {quantidade_lugares} lugar(es) na mesa {codigo_mesa} realizada com sucesso.")
+#     else:
+#         print(f"Não há lugares suficientes na mesa {codigo_mesa}. Apenas {mesas[codigo_mesa]} lugar(es) disponíveis.")
+
+# def main():
+#     global lugares_ocupados
+
+#     while lugares_ocupados < TOTAL_LUGARES:
+#         exibir_estado_mesas()
+#         try:
+#             codigo_mesa = int(input("\nDigite o código da mesa (1 a 30) ou 0 para sair: "))
+#             if codigo_mesa == 0:
+#                 print("Encerrando o programa.")
+#                 break
+
+#             quantidade_lugares = int(input("Digite a quantidade de lugares desejados: "))
+#             reservar_lugares(codigo_mesa, quantidade_lugares)
+
+#         except ValueError:
+#             print("Entrada inválida. Por favor, insira números inteiros.")
+
+#     if lugares_ocupados >= TOTAL_LUGARES:
+#         print("Todos os lugares estão ocupados.")
+
+# if __name__ == "__main__":
+#     main()
+
 
 #13. Construa um programa que realize as reservas de passagens áreas de uma companhia.
 #O programa deve permitir cadastrar o número de 10 voos e definir a
@@ -203,6 +296,11 @@ import random
 #o número do voo, atualizando o número de lugares disponíveis. Caso contrário,
 #avisar ao cliente a inexistência de lugares. A leitura do número 0 (zero) para o voo
 #desejado indica o término da leitura de reservas.
+numeros_voos = 10
+lugares_disponiveis = 
+
+
+
 
 #14. Faça um programa que armazene 50 números inteiros em uma lista. O programa
 #deve gerar e imprimir uma segunda lista em que cada elemento é o quadrado do
