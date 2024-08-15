@@ -117,17 +117,37 @@ import random
 #e o valor de venda de 30 produtos. A listagem pode ser de todos os produtos ou
 #somente de um ao se digitar o código. Utilize dicionário como estrutura de dados.
 
-# codigo = []
-# for x in range(30):
-#     codigos = dict()
-#     codigos['codigo'] = int(input("digite o codigo do produto: "))
-#     codigos['quant'] = int(input("digite a quantidade :  "))
-#     codigos['vlcompra'] = float(input("digite o valor da compra : "))
-#     codigos['vlvenda'] = float(input("digite o valor da venda: "))
-#     codigo.append(codigos)
-# print('CODIGO')
-# for a in codigo:
-#     print(f'{a["codigo"]}')
+#  produtos = dict()
+#     ultimo_codigo = 0
+#     with open('produtos.dat','r') as arquivo:
+#         for linha in arquivo:
+#             campos = linha.split(';')
+#             p = dict()
+#             p['cod'] = int(campos[0])
+#             p['nome'] = campos[1]
+#             p['qtde'] = campos[2]
+#             p['valor_compra'] = float(campos[3])
+#             p['valor_venda'] = float(campos[4])
+#             produtos[p['cod']] = p
+#             ultimo_codigo = p['cod']
+#     with open('produtos.dat','a') as arquivo:
+#         while True:
+#             p = dict()
+#             p['cod'] = int(input(f'Cód({ultimo_codigo+1}): '))
+#             if p['cod'] < 0:
+#                 break
+#             ultimo_codigo = p['cod']
+#             p['nome'] = input('Nome: ').upper()
+#             p['qtde'] = int(input('Qtde: '))
+#             p['valor_compra'] = float(input('Valor de Compra: R$ '))
+#             p['valor_venda'] = float(input('Valor de Venda: R$ '))
+#             produtos[p['cod']] = p
+#             arquivo.write(f'{p["cod"]};{p["nome"]};{p["qtde"]};{p["valor_compra"]};{p["valor_venda"]}\n')
+#     print('LISTA DE PRODUTOS:\n')
+#     for p in produtos.values():
+#         print(f'{p["cod"]}\t{p["nome"]}\t{p["qtde"]}\tR$ {p["valor_compra"]}\tR$ {p["valor_venda"]}')
+#     codigo = int(input('Digite o cód a ser pesquisado: '))
+#     print(f'{produtos[codigo]}')
 
 
         
@@ -208,8 +228,28 @@ import random
 
 #11. Imprimir o maior e o menor, sem ordenar, o percentual de números pares e a
 #média dos elementos da lista.
+# def processar_lista(lista):
+#     if not lista:
+#         print("A lista está vazia.")
+#         return
+    
+#     maior = max(lista)
+#     menor = min(lista)
+    
+#     pares = [x for x in lista if x % 2 == 0]
+#     percentual_pares = (len(pares) / len(lista)) * 100
+ 
+#     media = sum(lista) / len(lista)
+    
+    
+#     print(f"Maior valor: {maior}")
+#     print(f"Menor valor: {menor}")
+#     print(f"Percentual de números pares: {percentual_pares:.2f}%")
+#     print(f"Média dos elementos: {media:.2f}")
 
 
+# lista = [1, 2, 3, 4, 5, 6]
+# processar_lista(lista)
 
 
 
@@ -305,6 +345,15 @@ lugares_disponiveis =
 #14. Faça um programa que armazene 50 números inteiros em uma lista. O programa
 #deve gerar e imprimir uma segunda lista em que cada elemento é o quadrado do
 #elemento da primeira lista.
+
+
+
+
+
+
+
+
+
 
 #15. Faça um programa que leia e armazene vários números, até digitar o número
 #0. Imprimir quantos números iguais ao último número foram lidos. O limite de
