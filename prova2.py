@@ -1,4 +1,14 @@
+import json
+
 equipamentos = []
+
+def carregar_dados():
+    global equipamentos
+    try:
+        with open('equipamentos.json', 'r') as f:
+            equipamentos = json.load(f)
+    except FileNotFoundError:
+        equipamentos = []
 
 def cadastrar_equipamento():
     nome = input("Digite o nome do equipamento: ")
